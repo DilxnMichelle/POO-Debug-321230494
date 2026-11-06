@@ -25,8 +25,8 @@ function agregarAlCarrito(idProducto, cantidad) {
 function calcularTotal() {
   let precioTotal = 0;
   
-  for (let i = 0; i <= carritoCompras.length; i++) {
-    totalPrecio += carritoCompras[i].precio * carritoCompras[i].cantidad;
+  for (let i = 0; i < carritoCompras.length; i++) {
+    precioTotal += carritoCompras[i].precio * carritoCompras[i].cantidad;
   }
   
   return precioTotal;
