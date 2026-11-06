@@ -17,7 +17,7 @@ const gestorDeTareas = {
     let encontrada = false;
     
     for (let i = 0; i < this.tareas.length; i++) {
-      if (this.tareas[i].id = idTarea) {
+      if (this.tareas[i].id === idTarea) {
         this.tareas[i].completada = true;
         encontrada = true;
       }
